@@ -1,0 +1,1 @@
+const items=document.querySelectorAll('.principles,.section-title,.panel,.framework article,.architecture,.cta');items.forEach(x=>x.classList.add('reveal'));const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>o.observe(x));

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constraint Pinning — The Governance Layer for AI Agents</title>
+  <meta name="description" content="Constraint Pinning is a practical framework for keeping critical AI-agent rules, permissions, safety boundaries, and policies visible across long-running workflows.">
+  <meta property="og:title" content="Constraint Pinning">
+  <meta property="og:description" content="Make AI agents remember the rules.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://constraintpinning.com/">
+  <link rel="canonical" href="https://constraintpinning.com/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header container">
+    <a class="brand" href="#top"><span class="mark">CP</span>Constraint Pinning</a>
+    <nav>
+      <a href="#problem">Problem</a>
+      <a href="#framework">Framework</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#whitepaper">White Paper</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">AI agent governance · practical framework</p>
+      <h1>Make AI agents<br><span>remember the rules.</span></h1>
+      <p class="lead">Constraint Pinning is a practical approach for keeping critical rules, permissions, safety boundaries, and governance policies visible across long-running AI workflows.</p>
+      <div class="actions">
+        <a class="btn primary" href="#framework">Explore the framework</a>
+        <a class="btn secondary" href="#whitepaper">White paper</a>
+      </div>
+      <div class="principles">
+        <article><b>01</b><h3>Persistent</h3><p>Critical constraints remain available across long tasks and context changes.</p></article>
+        <article><b>02</b><h3>Verifiable</h3><p>Agent actions can be checked against explicit, machine-readable rules.</p></article>
+        <article><b>03</b><h3>Auditable</h3><p>Decisions, approvals, and exceptions can be logged for review.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="problem">
+      <div class="section-title">
+        <span>Why it matters</span>
+        <h2>The hidden risk is not only what an AI agent knows. It is what it forgets.</h2>
+      </div>
+      <div class="two-col">
+        <article class="panel"><h3>The problem</h3><p>Long-running agents may summarize context, transfer work between agents, or call multiple tools. During those transitions, critical instructions can become less visible or inconsistently applied.</p></article>
+        <article class="panel accent"><h3>The response</h3><p>Keep high-impact constraints in a dedicated governance layer and reintroduce them at important decisions, tool calls, approvals, and handoffs.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="framework">
+      <div class="section-title">
+        <span>Framework v0.1</span>
+        <h2>Five building blocks for governed AI execution.</h2>
+      </div>
+      <div class="framework">
+        <article><b>01</b><h3>Pinned Constraints</h3><p>Store the rules that must remain visible throughout the workflow.</p></article>
+        <article><b>02</b><h3>Permission Boundaries</h3><p>Define what the agent may do and when approval is required.</p></article>
+        <article><b>03</b><h3>Re-injection Layer</h3><p>Restore relevant constraints before high-risk actions and context transitions.</p></article>
+        <article><b>04</b><h3>Violation Check</h3><p>Evaluate intended actions against active constraints before execution.</p></article>
+        <article><b>05</b><h3>Audit Trail</h3><p>Record decisions, approvals, exceptions, and constraint changes.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="architecture">
+      <div class="section-title">
+        <span>Reference architecture</span>
+        <h2>A simple governance layer around agent decisions.</h2>
+      </div>
+      <div class="architecture">
+        <div>User / System Intent</div><span>↓</span>
+        <div>AI Agent</div><span>↓</span>
+        <div class="highlight">Pinned Constraints Layer</div><span>↓</span>
+        <div>Decision & Tool Execution</div><span>↓</span>
+        <div>Validation + Audit Log</div>
+      </div>
+    </section>
+
+    <section class="section container" id="whitepaper">
+      <div class="cta">
+        <div>
+          <span>Coming next</span>
+          <h2>Constraint Pinning Framework White Paper</h2>
+          <p>A practical guide to governance design, runtime validation, enterprise use cases, and implementation patterns.</p>
+        </div>
+        <a class="btn primary" href="mailto:hello@constraintpinning.com?subject=Constraint%20Pinning%20White%20Paper">Request early access</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div><strong>Constraint Pinning</strong><p>Built for practical AI governance.</p></div>
+    <div><a href="https://github.com/Noahaly89/constraintpinning">GitHub</a> · <a href="mailto:hello@constraintpinning.com">Contact</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
